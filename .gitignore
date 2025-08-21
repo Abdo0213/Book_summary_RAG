@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# Virtual environment
+venv/
+.env
+
+# Databases
+*.sqlite3
+*.db
+
+# Streamlit cache
+.streamlit/
+*/.streamlit/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Models & Large files
+backend/models/
+uploads/
+summaries/
+fonts/
+
+# Jupyter notebooks checkpoints (if any)
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Ignore Chroma DB folder
+chromadb/
+/chroma_books
+backend/chroma_books/*/
