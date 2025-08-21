@@ -37,7 +37,7 @@ Built with **FastAPI** (backend), **Streamlit** (frontend), **Cohere & Hugging F
 Clone the repo:
 
 ```bash
-git clone https://github.com/yourusername/research-assistant.git
+git clone https://github.com/Abdo0213/Book_summary_RAG
 cd research-assistant
 ```
 Create a virtual environment:
