@@ -47,6 +47,8 @@ source venv/bin/activate   # Mac/Linux
 venv\Scripts\activate      # Windows
 ```
 Install dependencies:
+ - pip install -r requirements.txt
+or manually
 ```bash
 pip install streamlit fastapi pydantic python-dotenv uvicorn pypdf chromadb \
 langchain langchain-community langchain-huggingface langchain-cohere \
@@ -71,12 +73,18 @@ streamlit run frontend/app.py
 │   ├── main.py           # FastAPI entrypoint
 │   ├── routers/          # API routes
 │   ├── db/               # Database connection (SQLite, Chroma)
-│   └── models/           # Pydantic models
-│
+│   ├── services/         # Logic pipeline for RAPTOR
+│   ├── data_models/      # Pydantic models
+|   ├── models/           # HF models
+│   └── utils/            # Some helper functions
+|
 ├── frontend/
-│   ├── app.py            # Streamlit UI
-│   ├── pages/            # Additional pages (login, register, chat)
-│
+│   └── app.py            # Streamlit UI
+|
+├── summaries/            # The summary Engish or Arabic
+|
+├── uploads/              # The files will be uploaded here
+|
 ├── README.md
 └── requirements.txt
 ```
